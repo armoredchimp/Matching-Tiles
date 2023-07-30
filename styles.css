@@ -1,0 +1,248 @@
+body {
+  font-family: "EB Garamond", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 98vh;
+  margin: 0;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+:root {
+  --white-color: #ddd;
+  --white-shade: #d7e2dbc7;
+  --black-color: #080808;
+  --black-shade: #111111c4;
+  --red-color: #551f1f;
+  --green-color: #6ca381;
+}
+/* .dark {
+  --white-color: #080808;
+  --black-color: #ddd;
+} */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.toolbar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+.scoreboard {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 20rem;
+}
+.inner-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-text {
+  font-size: 2.4rem;
+  visibility: hidden;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  /* margin: 1rem 0; */
+}
+.bottom-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card-wrapper {
+  width: 19rem;
+  height: 19rem; /* height of the .card + 2* border width */
+  padding: 5px; /* equivalent to the border size you want */
+  background-color: var(--white-color); /* your border color */
+  border-radius: 15px; /* border radius + border width */
+  /* box-shadow: 10px 20px 20px 0px #080808; */
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  /* border: 5px solid #999; */
+  cursor: pointer;
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 10px 10px 2px rgba(39, 39, 37, 0.63);
+  /* border: 5px solid #ddd; */
+}
+/* .card:hover {
+  border: 0.5px solid hsl(32, 97%, 12%);
+} */
+.card-wrapper:hover .card {
+  transform: scale(1.05);
+}
+.card-wrapper:active .card {
+  border: none;
+  transform: scale(0.99);
+}
+.warning {
+  position: absolute;
+  font-size: 2rem;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30rem;
+  text-align: end;
+  visibility: hidden;
+}
+.card-Back {
+  /* background-color: red; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.outer-cont {
+  width: 100%;
+  height: 100%;
+}
+
+#high-scores {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  max-width: 90%;
+  text-align: left;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+table {
+  width: 100%;
+}
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+}
+/* table tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+h1 {
+  /* margin-left: 0rem; */
+}
+h2 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+#play-again {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 6rem;
+}
+.score-up {
+  color: var(--green-color);
+  transition: all 1s ease;
+  animation: count-up 0.5s ease-out both;
+}
+.score-down {
+  color: var(--red-color);
+  transition: all 1s ease;
+  animation: count-down 0.5s ease-out both;
+}
+@keyframes count-up {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes count-down {
+  0% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* .top-corner {
+  display: flex;
+  justify-content: end;
+} */
+/* .night {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  color: var(--black-color);
+} */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 40%;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+}
+.modal-content {
+  background-color: var(--white-shade);
+  border: 1px solid var(--black-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 40% auto;
+  border-radius: 5px;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  width: 80%;
+  color: var(--black-color);
+}
+.modal-content:hover,
+.modal-content:active {
+  background-color: var(--green-color);
+}
+.modal-content li {
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+}
+#start-game {
+  display: inline-block;
+  background-color: var(--black-color);
+  border: none;
+  color: var(--white-color);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 0.4rem 0.2rem;
+  width: fit-content;
+}

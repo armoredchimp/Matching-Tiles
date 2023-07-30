@@ -1,0 +1,250 @@
+@media (max-width: 100em) {
+  .modal {
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+  }
+
+  .modal-content {
+    margin: 20% auto;
+    padding: 2rem 1rem;
+    width: 90%;
+  }
+}
+@media (max-width: 62em) {
+  .card-wrapper {
+    width: 15rem;
+    height: 15rem;
+  }
+  .game-board {
+    grid-gap: 2rem;
+    margin-left: -2rem;
+    order: 1;
+  }
+  .warning {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin: 2rem -1rem 2rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .bottom-wrap {
+    order: 3;
+  }
+  .toolbar {
+    margin-left: -2rem;
+  }
+  h1 {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+  }
+
+  #high-scores {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+  table th,
+  table td {
+    padding: 0.8rem;
+  }
+  #play-again {
+    margin-top: 5rem;
+    font-size: 1.3rem;
+  }
+  h2 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .card-wrapper {
+    width: 12rem;
+    height: 12rem;
+  }
+  .game-board {
+    grid-gap: 1rem;
+    margin-left: -1rem;
+  }
+  #high-scores {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+  }
+  table th,
+  table td {
+    padding: 0.6rem;
+  }
+  #play-again {
+    margin-top: 4rem;
+    font-size: 1.1rem;
+  }
+  h2 {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 36em) {
+  .card-wrapper {
+    width: 10rem;
+    height: 10rem;
+  }
+  .game-board {
+    grid-gap: 0.6rem;
+    /* margin-left: -2.6rem; */
+  }
+  .bottom-wrap {
+    margin-left: -1rem;
+  }
+  .scoreboard {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .card-wrapper {
+    width: 8.4rem;
+    height: 8.4rem;
+  }
+  .game-board {
+    grid-gap: 0.2rem;
+    /* margin-left: -4rem; */
+  }
+  .scoreboard {
+    gap: 8rem;
+  }
+  .toolbar p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 26em) {
+  .card-wrapper {
+    width: 7.4rem;
+    height: 7.4rem;
+  }
+  .game-board {
+    grid-gap: 0.2rem;
+    /* margin-left: -4rem; */
+  }
+  .modal-content {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 0.6rem;
+  }
+  #high-scores {
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+  table th,
+  table td {
+    padding: 0.4rem;
+  }
+  #play-again {
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 23.5em) {
+  .card-wrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media (max-width: 20em) {
+  .card-wrapper {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+  .game-board {
+    margin-left: 0;
+  }
+  .scoreboard {
+    gap: 5rem;
+  }
+  .toolbar {
+    margin-left: -1rem;
+  }
+  .warning {
+    margin: 1.1rem -1rem 1.1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .modal-content {
+    padding: 0.2rem;
+  }
+  #start-game {
+    margin-bottom: 1rem;
+  }
+  .bottom-text {
+    font-size: 2rem;
+  }
+  .warning {
+    font-size: 1.8rem;
+  }
+}
+@media (max-height: 71em) {
+  .warning {
+    margin: 0.2rem -1rem 0.2rem;
+  }
+  .scoreboard {
+    margin-top: 1rem;
+  }
+}
+@media (max-height: 69em) {
+  .scoreboard {
+    margin-top: 2rem;
+  }
+}
+@media (max-height: 67em) {
+  .scoreboard {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 48em) and (max-height: 66em) {
+  .card-wrapper {
+    width: 12rem;
+    height: 12rem;
+  }
+  .game-board {
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 46em) and(max-height: 59em) {
+  .card-wrapper {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+@media (min-width: 48em) and (max-height: 66em) {
+  .card-wrapper {
+    width: 12rem;
+    height: 12rem;
+  }
+  .game-board {
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 46em) and (max-height: 59em) {
+  .card-wrapper {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+@media (min-width: 79em) and (max-height: 50em) {
+  .bottom-wrap {
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+  }
+}
+@media (min-width: 64em) and (max-height: 38em) {
+  .card-wrapper {
+    width: 8rem;
+    height: 8rem;
+  }
+}

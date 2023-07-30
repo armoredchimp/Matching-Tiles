@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Matching Game</title>
+  </head>
+  <body>
+    <!-- <div class="outer-cont">
+      <div class="top-corner">
+        <ion-icon class="night" name="contrast-outline"></ion-icon>
+      </div></div> -->
+      <div class="modal">
+        <div class="modal-content">
+          <h1>A Matching Game</h1>
+          <ul>
+            <li>Match images to increase score.</li>
+            <li>Some images are very similar but not the same.</li>
+            <li>
+              The Reapers must be correctly matched or your score will suffer.
+            </li>
+            <li>This site displays better on desktop or large screens than mobile.</li>
+          </ul>
+          <button id="start-game">Start Game</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="scoreboard">
+          <p>Attempts: <span id="attempt-count">0</span></p>
+          <p>Score: <span id="match-count">0</span></p>
+        </div>
+      </div>
+      <div class="container">
+        <div id="high-scores" style="display: none">
+          <h2>High Scores:</h2>
+          <div id="table-container"></div>
+          <button id="play-again">Play Again</button>
+        </div>
+        <div class="warning"><p>Careful!</p></div>
+        <div class="game-board">
+          <div class="card-wrapper">
+            <div class="card card-1"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-2"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-3"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-4"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-5"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-6"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-7"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-8"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card card-9"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-wrap">
+        <p class="bottom-text">Not a match.</p>
+      </div>
+    </div>
+    <script type="module" src="script2.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
