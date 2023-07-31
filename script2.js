@@ -1,15 +1,15 @@
 "use strict";
 
 const cardBackClasses = [
-  "card-Back-0.png",
-  "card-Back-1.png",
-  "card-Back-2.png",
-  "card-Back-3.png",
-  "card-Back-4.png",
-  "card-Back-5.png",
-  "card-Back-6.png",
-  "card-Back-7.png",
-  "card-Back-8.png",
+  "card-Back-0.webp",
+  "card-Back-1.webp",
+  "card-Back-2.webp",
+  "card-Back-3.webp",
+  "card-Back-4.webp",
+  "card-Back-5.webp",
+  "card-Back-6.webp",
+  "card-Back-7.webp",
+  "card-Back-8.webp",
 ];
 import imageBank1 from "./image1/imageBank1.js";
 let nextPairs;
@@ -26,7 +26,12 @@ let bottomText = document.querySelector(".bottom-text");
 let cWrapper = document.querySelectorAll(".card-wrapper");
 let warningText = document.querySelector(".warning");
 let playAgain = document.getElementById("play-again");
-const deaths = ["death0.png", "death1.png", "death2.png", "death3.png"];
+const deaths = [
+  "image1/death0.webp",
+  "image1/death1.webp",
+  "image1/death2.webp",
+  "image1/death3.webp",
+];
 let deathMessages = [
   "Despair!",
   "Fate has frowned upon you",
